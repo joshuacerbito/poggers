@@ -2,7 +2,7 @@
   "name": "poggers",
   "version": "0.0.1",
   "description": "The hypest Front-End setup generator",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,10 +17,18 @@
     "setup",
     "frontend"
   ],
-  "author": "Joshua Cerbito (@joshuacerbito)",
+  "author": "Joshua Cerbito <josh@cerbito.com> (@joshuacerbito)",
   "license": "ISC",
+  "bin": {
+    "poggers": "./index.js"
+  },
   "bugs": {
     "url": "https://github.com/joshuacerbito/poggers/issues"
   },
-  "homepage": "https://github.com/joshuacerbito/poggers#readme"
+  "homepage": "https://github.com/joshuacerbito/poggers#readme",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "inquirer": "^5.2.0",
+    "shelljs": "^0.8.1"
+  }
 }
